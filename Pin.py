@@ -8,8 +8,10 @@ while attempt_n <= total_attempts:
     if supplied_pin == correct_pin:
         print('Pin accepted')
         break
-    else:
+    elif attempt_n < total_attempts:
         print('Pin incorrect, this is attempt no. ', attempt_n)
+    else:
+        print('You have no more attempts remaining')
     attempt_n += 1
 
 
